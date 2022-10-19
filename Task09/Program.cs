@@ -29,6 +29,7 @@ Console.WriteLine($"Случайное число из отрезка 10 - 99 =>
 // Console.WriteLine($"Наибольшая цифра числа {number} равна ");
 // Console.WriteLine(firstDigit > secondDigit ? firstDigit : secondDigit);
 
+// Метод
 int MaxDigit (int number)
 {
     int firstDigit = number / 10;

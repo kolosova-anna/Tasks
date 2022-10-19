@@ -27,4 +27,4 @@ int Num (int num)
     return firstDigit * 10 + thirdDigit;
 }
 int res = Num (number);
-Console.WriteLine($"Новое число => {num}");
+Console.WriteLine($"Новое число => {res}");
