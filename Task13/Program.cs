@@ -10,11 +10,11 @@ Console.WriteLine ("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int digit = default; 
 
-while (num > 999)
+while (num > 999 || num < -999)
 {
     num = num / 10;
 }
-if (num > 99)
+if (num > 99 || num < -99)
 {
     digit = num % 10;
     Console.WriteLine ($"Третья цифра числа -> {digit}");
