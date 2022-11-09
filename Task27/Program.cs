@@ -8,20 +8,21 @@
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
+int sum = 0;
 int SumNumbers(int number)
 {
-    int sumNumbers = default;
+    int sumNumbers = 0;
     int n = default;
     n = number % 10;
-    while (number > 10 || number < -11)
+    while (number >= 10 || number <= -10)
     {
-        
+        n = number % 10;
         number = number / 10;
+        sumNumbers = sumNumbers + n;
     }
-    n = number;
-    sumNumbers = sumNumbers + n;
+    sumNumbers = sumNumbers + number;
     return sumNumbers;
 }
 
-int sum = SumNumbers(num);
+sum = SumNumbers(num);
 Console.Write($"Сумма цифр в числе = {sum}");
