@@ -6,7 +6,7 @@
 Console.WriteLine("Введите количество элементов массива: ");
 int num = Convert.ToInt32(Console.ReadLine());
 
-int[] NameArray(int size)
+int[] NewArray(int size)
 {
     int[] array = new int[size];
     Random rnd = new Random();
@@ -25,5 +25,5 @@ void PrintArray(int[] array)
     }
 }
 
-int[] nameArray = NameArray(num);
-PrintArray(nameArray);
+int[] newArray = NewArray(num);
+PrintArray(newArray);
