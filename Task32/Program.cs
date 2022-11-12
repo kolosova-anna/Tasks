@@ -28,16 +28,15 @@ void PrintArray(int[] array)
 int[] arr = CreateArrayRndInt(8, -10, 10);
 PrintArray(arr);
 
-int[] ChangeSignNumberArr(int[] array)
+void ChangeSignNumberArr(int[] array)
 {
     for (int i = 0; i < array.Length; i++)
     {
         array[i] *= -1;
     }
-    return array;
 }
 
-int[] newArr = ChangeSignNumberArr(arr);
-PrintArray(newArr);
+ChangeSignNumberArr(arr);
+PrintArray(arr);
 
 
