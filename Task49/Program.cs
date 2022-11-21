@@ -32,7 +32,7 @@ void PrintMatrix(int[,] matrix)
     }
 }
 
-int[,] SquareMatrix(int[,] matrix)
+void SquareMatrix(int[,] matrix)
 {
     for (int i = 2; i < matrix.GetLength(0); i++)
     {
@@ -47,11 +47,10 @@ int[,] SquareMatrix(int[,] matrix)
             }
         }
     }
-    return matrix;
 }
 
 int[,] array2D = CreateMatrixRndInt(5, 5, -10, 10);
 PrintMatrix(array2D);
-Console.WriteLine(" ");
-int[,] squareMatrix = SquareMatrix(array2D);
-PrintMatrix(squareMatrix);
+Console.WriteLine();
+SquareMatrix(array2D);
+PrintMatrix(array2D);

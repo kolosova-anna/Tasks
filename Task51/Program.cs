@@ -48,6 +48,6 @@ int SumOfMainDiagonalNumbers(int[,] matrix)
 
 int[,] array2D = CreateMatrixRndInt(5, 5, -10, 10);
 PrintMatrix(array2D);
-Console.WriteLine(" ");
+Console.WriteLine();
 int sum = SumOfMainDiagonalNumbers(array2D);
 Console.WriteLine($"Сумма элементов главной диагонали = {sum}");
