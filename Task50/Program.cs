@@ -48,4 +48,8 @@ PrintMatrix(array2D);
 Console.WriteLine($"Введите позицию элемента в формате (строка, столбец) через enter: ");
 int i1 = Convert.ToInt32(Console.ReadLine());
 int j1 = Convert.ToInt32(Console.ReadLine());
+if(i1 >= 0 && j1 >= 0)
+{
 CheckPosition(array2D, i1, j1);
+}
+else Console.WriteLine("Введите значение большее или равное 0");
